@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+#back-img{
+    background-image: url('../img/img-header.jpg');
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center center
+}
+
+main{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+}
+
+h1.title{
+    text-align: center;
+    top: 20%;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    font-size: 66px;
+    font-family: 'Archivo Black', sans-serif;
+    text-shadow: 0px 0px 7px #021e2c;
+    background-color: rgba(25, 160, 218,.7);
+}
+
+header p{
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0px 0px 20px #000;
+    font-family: 'Archivo Black', sans-serif;
+}
+#bullets{
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    top: 47%;
+    background-color: rgba(25, 160, 218,.7);
+}
+#bullets p{
+    width: 33%;
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin: 15px 0;
+    }
+.point-1{
+    top:40%;
+}
+.point-2{
+    top:50%;
+}
+.point-3{
+    top:60%;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    z-index: 1;
+}
+
+nav ul{
+    float: right;
+    text-align: right;
+    margin: 0;
+    font-size:0px
+}
+
+li.nav-item{
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+li.nav-item.active a{
+    color:#fff;
+}
+li.nav-item.active{
+    background: #2c436d
+}
+li.nav-item:hover{
+    background: #5572a7;
+
+}
+li.nav-item:hover a{
+     color: #fff;
+}
+.nav-item a{
+    color: #2c436d;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s linear;
+}
+
+section h2{
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    background: #2c436d;
+    color: #fff;
+    padding: 12px 0;
+}
+
+#quien-soy .foto img{
+    max-width: 100%;
+    
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+.row-flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+.block-estudios,.block-expe,.app-video,.aficiones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 25px;
+    text-align: center;
+}
+.block-quien{
+    width: 48%;
+    display:inline-block;
+}
+.block-quien.datos{
+    vertical-align: top;
+    font-size: 25px;
+    text-align: center;
+}
+.block-expe.left{flex-grow: 1}
+.block-expe.right{flex-grow: 5}
+.block-expe img{width: 100%;border-radius: 50%;height:100%;}
+#experiencia li{
+    list-style-type: none;
+    border-bottom: 1px solid;
+}
+#experiencia li.last-item{
+    border-bottom: none;
+}
+#experiencia p,#experiencia h3,.aficiones p,#aficiones h3{margin: 5px}
+.form-left{
+    float:left;
+    width: 50%
+}
+.form-right{
+    float: right;
+    width:50%
+}
+.container-form p label{
+    width: 30%;
+    display: inline-block;
+}
+.container-form textarea{
+    width: 100%;
+    height: 200px;
+}
+.container-form button{
+    background: #2c436d;
+    color: #fff;
+    padding: 10px 10px;
+}
+form{
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+li figure{
+    transition: transform 1s;
+}
+
+#experiencia li figure.left {
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+}
+
+#experiencia li:hover figure.left {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+.oculto{
+    display: none;
+}
+.visto{
+    display: block;
+}
+#newOpinionName,#origen_otro{
+    width: 80%;
+    height: 80px;
+}
+
+.deleteOpinion{float: right;}
+#opinionContainer{padding: 0}
+#opinionContainer li{list-style: none;padding: 10px;}
+#opinionContainer li.par {background: #ccc}
+.footer{
+    text-align: center;
+    padding: 10px;
+    background: #2c436d;
+    color: #FFF;
+}
