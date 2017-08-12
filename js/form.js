@@ -69,7 +69,7 @@ form.addEventListener("submit", function (event) {
     }
 
     if (inputOrigen.origen1.checkValidity() === false && inputOrigen.origen2.checkValidity() === false && inputOrigen.origen3.checkValidity() === false) {
-        alert("Introduce el tipo de mision");
+        alert("Indique como nos conocio");
         event.preventDefault();
         return false;
     }
@@ -80,7 +80,8 @@ form.addEventListener("submit", function (event) {
         event.preventDefault();
         return false;
     }
-    var consultaLenght=inputConsulta.value.split(" ").length;
+
+    var consultaLenght=inputConsulta.value.trim().split(" ").length;
     if (consultaLenght > 150) {
         alert("La consulta no puede tener mas de 150 palabras");
         inputConsulta.focus();
@@ -97,6 +98,6 @@ form.addEventListener("submit", function (event) {
         form.reset();
         submitButton.removeAttribute("disabled");
         submitButton.removeChild(loadingIcon);
-        sendNotification("Formulario recibido", "Body de ejemplo");
+        sendNotification("Formulario recibido", "Datos enviados correctamente");
     }, 1000);
 });
